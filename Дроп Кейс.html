@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Дроп Кейс — чехлы, стёкла и плёнки для iPhone</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EDEFF8;--card:#fff;--ink:#12152B;--mute:#596080;--line:#DADFEE;--blue:#2B3BFF;--coral:#FF5A4E;--mint:#12A67F;--sun:#FFC83D;--soft:#E3E7FB;--r:22px;--g:12px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D0F21;--card:#171A34;--ink:#EEF0FF;--mute:#9AA1CA;--line:#2A2E57;--blue:#6C78FF;--soft:#22264A}}
+:root[data-theme="dark"]{--bg:#0D0F21;--card:#171A34;--ink:#EEF0FF;--mute:#9AA1CA;--line:#2A2E57;--blue:#6C78FF;--soft:#22264A}
+html{scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.45;padding-bottom:88px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+h1,h2,h3,.logo{font-family:Unbounded,Manrope,sans-serif;margin:0}
+button{font-family:inherit}
+header{position:sticky;top:0;z-index:15;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-size:19px;font-weight:800;display:flex;align-items:center;gap:8px}
+.logo b{width:30px;height:30px;border-radius:10px;background:var(--blue);display:grid;place-items:center;color:#fff;font-size:15px}
+.logo i{font-style:normal;color:var(--coral)}
+.cartbtn{border:0;background:var(--ink);color:var(--bg);border-radius:99px;height:40px;padding:0 16px;font-weight:800;font-size:14px;cursor:pointer}
+.hero{background:linear-gradient(160deg,var(--blue),#1A1F9E);color:#fff;border-radius:28px;padding:28px 22px 0;overflow:hidden;position:relative;min-height:320px;margin-top:4px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.14)}
+.hero::before{width:300px;height:300px;right:-90px;top:-70px}
+.hero::after{width:180px;height:180px;right:-20px;top:0}
+.hero h1{font-size:clamp(28px,8vw,46px);font-weight:800;line-height:1.05;max-width:58%;position:relative}
+.hero p{max-width:52%;margin:12px 0 20px;font-size:15px;opacity:.92;position:relative}
+.btn{border:0;background:#fff;color:#12152B;font-weight:800;font-size:15px;height:48px;padding:0 24px;border-radius:99px;cursor:pointer;position:relative}
+.floor{position:absolute;left:0;right:0;bottom:0;height:28px;background:rgba(0,0,0,.25)}
+.hphone{position:absolute;right:9%;bottom:28px;width:116px;height:226px;border-radius:28px;background:var(--coral);box-shadow:inset 0 0 0 5px rgba(255,255,255,.35),0 18px 30px rgba(0,0,0,.3);transform-origin:bottom center;animation:drop 1.3s cubic-bezier(.3,.7,.4,1) both}
+.hphone::before{content:"";position:absolute;top:12px;left:12px;width:52px;height:52px;border-radius:16px;background:#12152B;box-shadow:inset 0 0 0 5px #2a2e57}
+.hphone::after{content:"";position:absolute;bottom:22px;left:50%;transform:translateX(-50%);width:34px;height:34px;border-radius:50%;border:4px solid rgba(255,255,255,.55)}
+@keyframes drop{0%{transform:translateY(-340px) rotate(-18deg)}55%{transform:translateY(0) rotate(5deg)}70%{transform:translateY(-36px) rotate(-2deg)}85%{transform:translateY(0) rotate(1deg)}100%{transform:none}}
+.stats,.feat{display:grid;gap:var(--g)}
+.stats{grid-template-columns:repeat(3,1fr);margin-top:var(--g)}
+.stat{background:var(--card);border-radius:var(--r);padding:16px 12px;text-align:center}
+.stat b{display:block;font-family:Unbounded;font-size:20px;color:var(--blue)}
+.stat span{font-size:12px;color:var(--mute)}
+section{margin-top:36px}
+h2{font-size:22px;margin-bottom:4px}
+.sub{color:var(--mute);margin:0 0 16px;font-size:14px}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--g)}
+.cat{border:0;background:var(--card);border-radius:var(--r);padding:14px 8px 14px;cursor:pointer;color:var(--ink);text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.cat .pic{width:100%;height:110px}
+.cat b{font-size:14px}.cat small{color:var(--mute);margin-top:-8px;font-size:12px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 6px;scrollbar-width:none}
+.chip{flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--ink);height:40px;padding:0 16px;border-radius:99px;font-weight:600;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.bar2{margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--g);margin-top:12px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(3,1fr)}.hero h1{max-width:50%}}
+.card{background:var(--card);border-radius:var(--r);padding:10px;display:flex;flex-direction:column;position:relative}
+.pic{height:172px;border-radius:16px;background:color-mix(in srgb,var(--c) 15%,var(--card));display:grid;place-items:center;position:relative}
+.badge{position:absolute;top:8px;left:8px;background:var(--ink);color:var(--bg);font-size:11px;font-weight:800;padding:4px 9px;border-radius:99px;z-index:1}
+.badge.sale{background:var(--coral);color:#fff}
+.ph{width:66px;height:132px;border-radius:18px;position:relative}
+.case{background:var(--c);box-shadow:inset 0 0 0 4px rgba(255,255,255,.35),0 10px 16px rgba(0,0,0,.18)}
+.case::before{content:"";position:absolute;top:8px;left:8px;width:30px;height:30px;border-radius:10px;background:#12152B;box-shadow:inset 0 0 0 3px #2a2e57}
+.glass{background:#0d0f20;border:3px solid #fff;box-shadow:0 0 0 2px var(--c),0 10px 16px rgba(0,0,0,.18);overflow:hidden}
+.glass::before{content:"";position:absolute;inset:-20% auto -20% 30%;width:16px;background:rgba(255,255,255,.35);transform:rotate(18deg)}
+.film{background:repeating-linear-gradient(135deg,var(--c) 0 6px,rgba(255,255,255,.55) 6px 12px);border:3px solid var(--c);box-shadow:0 10px 16px rgba(0,0,0,.14)}
+.card h3{font-size:14px;line-height:1.25;margin:12px 4px 4px;min-height:36px}
+.meta{display:flex;justify-content:space-between;margin:0 4px;color:var(--mute);font-size:12px}
+.star{color:#E8A400;font-weight:800}
+.row{display:flex;justify-content:space-between;align-items:center;margin:auto 4px 0;padding-top:12px}
+.price{font-weight:800;font-size:15px;line-height:1.2}
+.price s{display:block;color:var(--mute);font-weight:400;font-size:12px}
+.add{border:0;background:var(--blue);color:#fff;width:42px;height:42px;border-radius:50%;font-size:22px;cursor:pointer;flex:none}
+.promo{background:var(--ink);color:var(--bg);border-radius:28px;padding:24px 20px;display:flex;gap:16px;align-items:center;justify-content:space-between}
+.promo h2{font-size:20px}.promo p{margin:6px 0 16px;opacity:.8;font-size:14px}
+.promo .btn{background:var(--sun);color:#12152B}
+.promo .pic{width:120px;height:120px;flex:none;background:var(--soft);border-radius:24px}
+.promo .ph{transform:scale(.7)}
+.feat{grid-template-columns:repeat(2,1fr)}
+.f{background:var(--card);border-radius:var(--r);padding:18px 16px}
+.f i{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-style:normal;font-weight:800;color:#fff;margin-bottom:12px}
+.f b{display:block;font-size:15px;margin-bottom:4px}.f span{font-size:13px;color:var(--mute)}
+.revs{display:flex;gap:var(--g);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.rev{flex:0 0 78%;max-width:300px;scroll-snap-align:start;background:var(--card);border-radius:var(--r);padding:18px;font-size:14px}
+.rev p{margin:8px 0 14px}.rev b{font-size:13px}.rev small{color:var(--mute)}
+.contact{background:var(--blue);color:#fff;border-radius:28px;padding:24px 20px}
+.contact p{margin:6px 0 16px;opacity:.9;font-size:14px}
+.contact .btn{margin:0 8px 8px 0}
+footer{margin:28px 0 0;color:var(--mute);font-size:13px;text-align:center}
+button:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);z-index:10;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px))}
+.nav div{max-width:760px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
+.nav button{border:0;background:none;color:var(--mute);font-weight:700;font-size:12px;padding:8px;cursor:pointer}
+.sheet{position:fixed;inset:0;background:rgba(10,12,30,.55);display:none;align-items:flex-end;z-index:20}
+.sheet.on{display:flex}
+.panel{background:var(--card);width:100%;max-width:760px;margin:0 auto;border-radius:28px 28px 0 0;padding:22px 16px calc(20px + env(safe-area-inset-bottom,0px));max-height:82%;overflow:auto}
+.line{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+.line small{color:var(--mute)}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{border:1px solid var(--line);background:var(--bg);color:var(--ink);width:30px;height:30px;border-radius:50%;cursor:pointer}
+.total{display:flex;justify-content:space-between;font-weight:800;font-size:18px;margin:16px 0}
+.btn.full{width:100%;background:var(--blue);color:#fff}
+.btn.ghost{width:100%;background:var(--bg);color:var(--ink);margin-top:8px}
+.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:99px;font-weight:700;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30;white-space:nowrap}
+.toast.on{opacity:1}
+.empty{grid-column:1/-1;text-align:center;color:var(--mute);padding:30px 0}
+@media(prefers-reduced-motion:reduce){.hphone{animation:none}}
+
+/* wow */
+:root{--bg:#DCD6FF;--ink:#0B0B1E;--line:#0B0B1E;--lime:#C6FF3D;--sh:4px 4px 0 var(--line)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14112E;--card:#1D1A42;--ink:#F2F0FF;--line:#F2F0FF;--sh:4px 4px 0 #6C78FF}}
+:root[data-theme="dark"]{--bg:#14112E;--card:#1D1A42;--ink:#F2F0FF;--line:#F2F0FF;--sh:4px 4px 0 #6C78FF}
+body{overflow-x:hidden;padding-bottom:150px}
+header{background:var(--bg);border-bottom:2.5px solid var(--line);backdrop-filter:none}
+.card,.stat,.cat,.f,.rev,.hero,.promo,.contact,.chip,.cartbtn,.btn,.add,.pic,.f i{border:2.5px solid var(--line)}
+.card,.stat,.cat,.f,.rev,.hero,.promo,.contact{box-shadow:var(--sh)}
+.btn,.cartbtn{box-shadow:3px 3px 0 var(--line)}
+.card:active,.cat:active,.btn:active,.add:active,.cartbtn:active{transform:translate(3px,3px);box-shadow:none}
+.logo b{width:24px;height:34px;border-radius:9px;background:var(--coral);border:2.5px solid var(--line);position:relative;display:block}
+.logo b::before{content:"";position:absolute;top:3px;left:3px;width:9px;height:9px;border-radius:4px;background:var(--line)}
+.hero{background:var(--blue);min-height:340px}
+.hero h1{font-size:clamp(32px,9.5vw,54px);max-width:62%}
+.sticker{position:absolute;right:14px;top:14px;width:92px;height:92px;border-radius:50%;background:var(--lime);color:#0B0B1E;border:2.5px solid #0B0B1E;box-shadow:3px 3px 0 #0B0B1E;display:grid;place-items:center;text-align:center;font:800 13px/1.15 Unbounded;transform:rotate(12deg);z-index:2}
+.tick{margin:22px -16px 18px;background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;transform:rotate(-1.5deg);padding:12px 0;border-block:2.5px solid var(--line)}
+.tick div{display:inline-flex;animation:tk 24s linear infinite}
+.tick span{font:800 18px Unbounded;padding:0 18px}
+.tick span::after{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--lime);margin-left:36px}
+@keyframes tk{to{transform:translateX(-50%)}}
+h2{font-size:26px}
+.chip{height:44px;box-shadow:none}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.search{width:100%;height:54px;border-radius:99px;border:2.5px solid var(--line);background:var(--card);color:var(--ink);padding:0 22px;font:600 16px Manrope;margin-bottom:10px;outline:0}
+.search:focus{box-shadow:var(--sh)}
+.badge{background:var(--lime);color:#0B0B1E;border:2px solid #0B0B1E;transform:rotate(-4deg)}
+.badge.sale{background:var(--coral);color:#fff}
+.stock{margin:6px 4px 0;font-size:12px;font-weight:800;color:var(--mint);display:flex;align-items:center;gap:6px}
+.stock::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint)}
+.add{width:46px;height:46px}
+.qty{background:var(--soft);border:2px solid var(--line);border-radius:99px;padding:3px;gap:6px;font-weight:800}
+.qty button{width:36px;height:36px;border:0;background:var(--card);color:var(--ink);border-radius:50%;font-size:18px;font-weight:800;cursor:pointer}
+.tag{display:inline-block;background:var(--lime);color:#0B0B1E;font-size:11px;font-weight:800;padding:4px 10px;border-radius:99px;border:2px solid #0B0B1E}
+.promo .btn{background:var(--sun)}
+.fc{position:fixed;left:16px;right:16px;bottom:calc(68px + env(safe-area-inset-bottom,0px));max-width:728px;margin:0 auto;z-index:12;display:none;justify-content:space-between;align-items:center;background:var(--lime);color:#0B0B1E;border:2.5px solid #0B0B1E;box-shadow:4px 4px 0 #0B0B1E;border-radius:99px;height:56px;padding:0 24px;font:800 16px Manrope;cursor:pointer}
+.fc.on{display:flex}
+.nav{border-top:2.5px solid var(--line)}
+.nav button{font-size:13px;min-height:44px}
+.panel{border:2.5px solid var(--line);border-bottom:0}
+.toast{bottom:140px}
+@media(prefers-reduced-motion:reduce){.tick div{animation:none}}
+
+/* no drawn phones */
+.hero{min-height:0;padding-bottom:26px}
+.hero h1{font-size:clamp(34px,10vw,60px)}
+.hq{display:flex;flex-wrap:wrap;gap:10px;position:relative}
+.hb{height:46px;padding:0 20px;border-radius:99px;border:2.5px solid #0B0B1E;background:#fff;color:#0B0B1E;font:800 15px Manrope;box-shadow:3px 3px 0 #0B0B1E;cursor:pointer}
+.hb:active{transform:translate(3px,3px);box-shadow:none}
+.logo b{width:22px;height:22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--coral);border:2.5px solid var(--line);margin-right:2px}
+.logo b::before{display:none}
+.pic{overflow:hidden}
+.pic::before{content:"";position:absolute;inset:0;opacity:.4}
+.pic.case::before,.pic.deal::before{background:repeating-linear-gradient(135deg,var(--c) 0 8px,transparent 8px 18px)}
+.pic.glass::before{background:radial-gradient(var(--c) 2.5px,transparent 3px) 0 0/16px 16px}
+.pic.film::before{background:repeating-radial-gradient(circle at 0 100%,var(--c) 0 3px,transparent 3px 14px)}
+.tp{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.tp span{font:800 clamp(22px,6.4vw,30px)/1 Unbounded;color:var(--ink);background:var(--card);padding:8px 12px;border:2.5px solid var(--line);border-radius:14px;box-shadow:3px 3px 0 var(--c);transform:rotate(-3deg)}
+.tp small{font-weight:800;font-size:12px;background:var(--lime);color:#0B0B1E;border:2px solid #0B0B1E;border-radius:99px;padding:3px 10px}
+.cat .tp span{font-size:16px;padding:6px 10px}
+.promo .tp span{font-size:20px}
+.hero h1,.hero p{max-width:100%}
+/* even cards */
+.grid{align-items:stretch;grid-auto-rows:1fr}
+.card{height:100%;padding:10px 10px 12px}
+.card .pic{height:168px;flex:none}
+.card h3{font-size:14px;line-height:1.25;height:2.5em;min-height:0;margin:12px 4px 6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.meta{height:18px;margin:0 4px}
+.meta span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stock{height:18px;margin:4px 4px 0}
+.row{height:56px;min-height:56px;padding-top:0;margin:auto 4px 0;align-items:center}
+.price{display:flex;flex-direction:column;justify-content:center;font-size:15px;line-height:1.2}
+.qty{height:46px;flex:none}
+.chips{flex-wrap:wrap;overflow:visible}
+.chip{white-space:nowrap}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:620px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{min-width:0}
+.card h3{font-size:13px}
+.tp{max-width:100%}
+.tp span{font-size:clamp(18px,5vw,26px);max-width:100%;padding:8px 10px}
+.tp small{max-width:100%;white-space:nowrap}
+.pick{width:100%;min-height:64px;margin-bottom:10px;padding:0 16px 0 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--card);color:var(--ink);border:2.5px solid var(--line);border-radius:20px;box-shadow:var(--sh);cursor:pointer;text-align:left;font-family:inherit}
+.pick:active{transform:translate(3px,3px);box-shadow:none}
+.pick small{display:block;color:var(--mute);font-size:12px;font-weight:600}
+.pick b{font-size:17px;font-weight:800}
+.pick i{font-style:normal;background:var(--lime);color:#0B0B1E;border:2px solid #0B0B1E;border-radius:99px;padding:8px 16px;font-weight:800;font-size:13px;flex:none}
+.mg{font-size:14px;margin:18px 0 8px}
+.mv{display:flex;flex-wrap:wrap;gap:8px}
+.tp small{overflow:hidden;text-overflow:ellipsis}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo"><b></b><span>Дроп<i>Кейс</i></span></div><button class="cartbtn" id="open">Корзина · <span id="cnt">0</span></button></div></header>
+<main class="wrap">
+
+<div class="hero">
+<h1>Падай смело. Телефон выдержит.</h1>
+<p>Чехлы, защитные стёкла и плёнки только для iPhone.</p>
+<div class="hq"><button class="hb" data-t="case">Чехлы</button><button class="hb" data-t="glass">Стёкла</button><button class="hb" data-t="film">Плёнки</button></div>
+
+</div>
+
+<div class="tick" aria-hidden="true"><div><span>Чехлы</span><span>Стёкла</span><span>Плёнки</span><span>Чехлы</span><span>Стёкла</span><span>Плёнки</span><span>Чехлы</span><span>Стёкла</span><span>Плёнки</span><span>Чехлы</span><span>Стёкла</span><span>Плёнки</span><span>Чехлы</span><span>Стёкла</span><span>Плёнки</span><span>Чехлы</span><span>Стёкла</span><span>Плёнки</span></div></div>
+
+<div class="stats">
+<div class="stat"><b>500+</b><span>товаров в наличии</span></div>
+<div class="stat"><b>24 ч</b><span>доставка по городу</span></div>
+<div class="stat"><b>12 мес</b><span>гарантия на товар</span></div>
+</div>
+
+<section>
+<h2>Категории</h2><p class="sub">Выберите, что нужно вашему телефону</p>
+<div class="cats" id="cats"></div>
+</section>
+
+<section id="shop">
+<h2>Витрина</h2><p class="sub">Выберите свой iPhone, и мы покажем подходящее</p>
+<input id="q" class="search" type="search" placeholder="Найти аксессуар для iPhone" aria-label="Поиск по витрине">
+<button class="pick" id="pick"><span><small>Ваш телефон</small><b id="pickv">Все модели</b></span><i>Выбрать</i></button>
+<div class="chips bar2" id="tabs"></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section>
+<div class="promo">
+<div><h2>Комплект: чехол + стекло</h2><p>Скидка 15% на второй товар из набора.</p><button class="btn" data-go="shop">Собрать набор</button></div>
+<div class="pic deal" style="--c:#FFC83D"><div class="tp"><span>−15%</span></div></div>
+</div>
+</section>
+
+<section>
+<h2>Почему Дроп Кейс</h2><p class="sub">Четыре причины вернуться к нам</p>
+<div class="feat">
+<div class="f"><i style="background:var(--blue)">1</i><b>Точный подбор</b><span>Размеры под вырезы и камеры вашего iPhone.</span></div>
+<div class="f"><i style="background:var(--coral)">2</i><b>Удобный заказ</b><span>Поиск, фильтр по модели и корзина в одно касание.</span></div>
+<div class="f"><i style="background:var(--mint)">3</i><b>Гарантия</b><span>Заменим товар при заводском браке.</span></div>
+<div class="f"><i style="background:#E8A400">4</i><b>Быстро</b><span>Привезём в день заказа или заберёте сами.</span></div>
+</div>
+</section>
+
+<section>
+<div class="contact">
+<h2>Не нашли свой iPhone?</h2>
+<p>Напишите нам, подберём и привезём под заказ за 2–3 дня.</p>
+<button class="btn" id="msg">Написать нам</button><button class="btn" id="call" style="background:rgba(255,255,255,.18);color:#fff">Позвонить</button>
+</div>
+<footer>Дроп Кейс · аксессуары для iPhone<br>Ежедневно с 9:00 до 21:00</footer>
+</section>
+</main>
+
+<button class="fc" id="fc"><span>Открыть корзину</span><b id="fcs"></b></button>
+<nav class="nav"><div><button data-go="top">Главная</button><button data-go="shop">Витрина</button><button id="open2">Корзина</button></div></nav>
+
+<div class="sheet" id="sheet"><div class="panel">
+<h2 style="margin-bottom:8px">Корзина</h2><div id="lines"></div>
+<div class="total"><span>Итого</span><span id="sum">0 сум</span></div>
+<button class="btn full" id="buy">Оформить заказ</button>
+<button class="btn ghost" id="close">Продолжить покупки</button>
+</div></div>
+<div class="sheet" id="msheet"><div class="panel">
+<h2 style="margin-bottom:4px">Выберите свой iPhone</h2><div id="mlist"></div>
+<button class="btn full" data-all="1" style="margin-top:18px">Показать все модели</button>
+<button class="btn ghost" id="mclose">Закрыть</button>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+var A="*";
+var P=[
+{id:1,t:"case",n:"Чехол «Ночной асфальт»",s:"Силикон",p:89000,c:"#2B3BFF",m:["iPhone 15","iPhone 16","iPhone 17"],b:"Хит"},
+{id:2,t:"case",n:"Чехол «Коралл»",s:"Усиленные углы",p:99000,o:119000,c:"#FF5A4E",m:["iPhone 14","iPhone 15"]},
+{id:3,t:"case",n:"Чехол «Мята» прозрачный",s:"Не желтеет",p:79000,c:"#12A67F",m:["iPhone 14","iPhone 16","iPhone 17"]},
+{id:4,t:"case",n:"Чехол «Графит» MagSafe",s:"С магнитом",p:149000,c:"#3A3F5C",m:["iPhone 15","iPhone 16","iPhone 17"],b:"Новинка"},
+{id:5,t:"glass",n:"Стекло 9H",s:"Полная проклейка",p:59000,c:"#2B3BFF",m:["iPhone 14","iPhone 15","iPhone 16","iPhone 17"],b:"Хит"},
+{id:6,t:"glass",n:"Стекло антишпион",s:"Скрывает экран",p:79000,o:99000,c:"#7A3BFF",m:["iPhone 14","iPhone 15","iPhone 16"]},
+{id:7,t:"glass",n:"Стекло матовое",s:"Без бликов",p:69000,c:"#12A67F",m:["iPhone 15","iPhone 16","iPhone 17"]},
+{id:8,t:"film",n:"Плёнка гидрогель",s:"Самовосстановление",p:39000,c:"#FF5A4E",m:["iPhone 14","iPhone 15","iPhone 16","iPhone 17"]},
+{id:9,t:"film",n:"Плёнка на камеру",s:"Набор из 3 штук",p:29000,o:39000,c:"#E8A400",m:["iPhone 14","iPhone 15","iPhone 16","iPhone 17"]}
+];
+var T=[["all","Всё"],["case","Чехлы"],["glass","Стёкла"],["film","Плёнки"]];
+var M=["Все модели","iPhone 14","iPhone 15","iPhone 16","iPhone 17"];
+var N={case:"Чехлы",glass:"Стёкла",film:"Плёнки"};
+var L={case:"Чехол",glass:"Стекло",film:"Плёнка"};
+var cur="all",mod=M[0],q="",sel="",cart={};
+var G=[["iPhone 14",["iPhone 14","iPhone 14 Plus","iPhone 14 Pro","iPhone 14 Pro Max"]],["iPhone 15",["iPhone 15","iPhone 15 Plus","iPhone 15 Pro","iPhone 15 Pro Max"]],["iPhone 16",["iPhone 16","iPhone 16 Plus","iPhone 16 Pro","iPhone 16 Pro Max"]],["iPhone 17",["iPhone 17","iPhone Air","iPhone 17 Pro","iPhone 17 Pro Max"]]];
+function mrender(){$("mlist").innerHTML=G.map(function(g){return '<h3 class="mg">Серия '+g[0].slice(7)+'</h3><div class="mv">'+g[1].map(function(v){return '<button class="chip" aria-pressed="'+(sel==v)+'" data-v="'+v+'" data-g="'+g[0]+'">'+v+'</button>'}).join("")+'</div>'}).join("")}
+var $=function(i){return document.getElementById(i)};
+var fmt=function(n){return n.toLocaleString("ru-RU").replace(/\u00a0/g," ")+" сум"};
+function ch(list,val,k){return list.map(function(x){var z=Array.isArray(x)?x:[x,x],v=z[0],l=z[1];return '<button class="chip" aria-pressed="'+(val==v)+'" data-'+k+'="'+v+'">'+l+'</button>'}).join("")}
+function cats(){$("cats").innerHTML=["case","glass","film"].map(function(k){var n=P.filter(function(x){return x.t==k}).length,x=P.filter(function(x){return x.t==k})[0];
+return '<button class="cat" data-t="'+k+'"><div class="pic '+k+'" style="--c:'+x.c+'"><div class="tp"><span>'+L[k]+'</span></div></div><b>'+N[k]+'</b><small>'+n+' товара</small></button>'}).join("")}
+function chips(){$("tabs").innerHTML=ch(T,cur,"t");$("pickv").textContent=sel||"Все модели";mrender()}
+function grid(){var LL=P.filter(function(x){return (cur=="all"||x.t==cur)&&(mod==M[0]||x.m.indexOf(mod)>-1)&&(!q||x.n.toLowerCase().indexOf(q)>-1)});
+$("grid").innerHTML=LL.map(function(x){var b=x.o?'<span class="badge sale">−'+Math.round(100-x.p/x.o*100)+'%</span>':x.b?'<span class="badge">'+x.b+'</span>':"";
+return '<article class="card"><div class="pic '+x.t+'" style="--c:'+x.c+'">'+b+'<div class="tp"><span>'+L[x.t]+'</span><small>'+(sel||x.m[0]+(x.m.length>1?" +"+(x.m.length-1):""))+'</small></div></div><h3>'+x.n+'</h3><div class="meta"><span>'+x.s+'</span></div><div class="stock">В наличии</div><div class="row"><span class="price">'+(x.o?'<s>'+fmt(x.o)+'</s>':"")+fmt(x.p)+'</span>'+(cart[x.id]?'<span class="qty"><button data-d="'+x.id+'" aria-label="Убрать">−</button>'+cart[x.id]+'<button data-a="'+x.id+'" aria-label="Добавить">+</button></span>':'<button class="add" data-id="'+x.id+'" aria-label="В корзину: '+x.n+'">+</button>')+'</div></article>'}).join("")||'<p class="empty">Для этой модели пока нет товаров в разделе. Напишите нам, привезём под заказ.</p>'}
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.k);toast.k=setTimeout(function(){t.classList.remove("on")},1700)}
+function render(){var n=0,s=0,h="";P.forEach(function(x){var q=cart[x.id]||0;if(q){n+=q;s+=q*x.p;h+='<div class="line"><span>'+x.n+'<br><small>'+fmt(x.p)+'</small></span><span class="qty"><button data-d="'+x.id+'" aria-label="Убрать">−</button>'+q+'<button data-a="'+x.id+'" aria-label="Добавить">+</button></span></div>'}});
+$("cnt").textContent=n;$("sum").textContent=fmt(s);$("lines").innerHTML=h||'<p style="color:var(--mute)">Пока пусто. Добавьте товар с витрины.</p>';$("fc").classList.toggle("on",n>0);$("fcs").textContent=n+" шт. · "+fmt(s);grid()}
+document.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var d=b.dataset;
+if(d.go){(d.go=="top"?document.body:$(d.go)).scrollIntoView({behavior:"smooth"})}
+else if(d.v){sel=d.v;mod=d.g;$("msheet").classList.remove("on");chips();grid();toast("Выбран "+sel)}
+else if(d.all){sel="";mod=M[0];$("msheet").classList.remove("on");chips();grid()}
+else if(b.id=="pick"){$("msheet").classList.add("on")}
+else if(b.id=="mclose"){$("msheet").classList.remove("on")}
+else if(d.t){cur=d.t;chips();grid();if(b.classList.contains("cat")||b.classList.contains("hb"))$("shop").scrollIntoView({behavior:"smooth"})}
+else if(b.classList.contains("add")){cart[d.id]=(cart[d.id]||0)+1;render();toast("Добавлено в корзину")}
+else if(d.a){cart[d.a]++;render()}
+else if(d.d){cart[d.d]=Math.max(0,cart[d.d]-1);render()}
+else if(b.id=="open"||b.id=="open2"||b.id=="fc"){$("sheet").classList.add("on")}
+else if(b.id=="close"){$("sheet").classList.remove("on")}
+else if(b.id=="msg"||b.id=="call"){toast("Контакты добавим после подключения номера")}
+else if(b.id=="buy"){if(!P.some(function(x){return cart[x.id]>0})){toast("Корзина пуста");return}cart={};render();$("sheet").classList.remove("on");toast("Заказ принят. Мы свяжемся с вами")}});
+$("msheet").addEventListener("click",function(e){if(e.target==this)this.classList.remove("on")});
+$("sheet").addEventListener("click",function(e){if(e.target==this)this.classList.remove("on")});
+$("q").addEventListener("input",function(){q=this.value.trim().toLowerCase();grid()});
+cats();chips();grid();render();
+</script>
+</body>
+</html>
